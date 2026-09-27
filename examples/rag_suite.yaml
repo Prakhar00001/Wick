@@ -1,0 +1,7 @@
+from wick.core.interfaces import EvalTarget
+from wick.core.models import Example, TargetResult
+
+class MyAgentTarget(EvalTarget):
+    async def run(self, example: Example, *, trace: bool = False) -> TargetResult:
+        result = await my_agent.invoke(example.input)
+        return TargetResult(example_id=example.id, output=result)
