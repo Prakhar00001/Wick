@@ -18,7 +18,7 @@
 
 Current LLM evaluation tools often fall into two traps: they are either notebook-centric toy scripts that fail under rate limits, or they are heavy, opinionated SaaS platforms that force you to rewrite your entire agent architecture to use them.
 
-**Wick** is built for the Principal ML Engineer. It is an infrastructure-first CLI evaluation harness designed to operate at scale. It acts as an uncompromising quality gate for single-prompt models, RAG pipelines, and multi-turn autonomous agents.
+It is an infrastructure-first CLI evaluation harness designed to operate at scale. It acts as an uncompromising quality gate for single-prompt models, RAG pipelines, and multi-turn autonomous agents.
 
 ### Core Tenets
 1. **Zero False Confidence:** Rigorous LLM-as-a-judge criteria, exact-match grounding, and statistical diffing.
@@ -90,5 +90,5 @@ Newly Failing Examples:
 Exiting with code 1. CI pipeline blocked.
 
 
- * License
+ * LICENSE
 Distributed under the MIT License. See LICENSE for more information.
