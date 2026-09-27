@@ -1,7 +1,7 @@
 <div align="center">
 
 # <span style="color:red">WICK</span>
-**A Production-Grade LLM Evaluation Harness**
+**A LLM Evaluation Harness**
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![Type Checking](https://img.shields.io/badge/type__checking-strict-green.svg)](https://microsoft.github.io/pyright/)
