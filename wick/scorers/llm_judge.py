@@ -10,7 +10,7 @@ logger = logging.getLogger("wick.scorer")
 
 class LLMJudgeScorer(Scorer):
     # Using Llama 3 70B as default since it is highly capable for evaluation tasks
-    def __init__(self, model: str = "llama3-70b-8192", criteria: str = "Is the output helpful?"):
+    def __init__(self, model: str = "openai/gpt-oss-120b", criteria: str = "Is the output helpful?"):
         self._name = f"llm_judge_{model}"
         self.model = model
         self.criteria = criteria
