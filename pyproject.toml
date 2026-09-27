@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wick-eval"
+version = "0.1.0"
+description = "Production-grade LLM Evaluation Harness"
+authors = [{name = "Prakhar Saini"}]
+requires-python = ">=3.11"
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "pydantic>=2.0.0",
+    "httpx>=0.25.0",
+    "openai>=1.0.0",
+    "anthropic>=0.18.0",
+    "pyyaml>=6.0.1",
+    "aiosqlite>=0.19.0",
+    "tenacity>=8.2.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio", "pyright", "ruff"]
+
+[project.scripts]
+wick = "wick.cli.main:app"
+
+[tool.pyright]
+strict = ["wick"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
